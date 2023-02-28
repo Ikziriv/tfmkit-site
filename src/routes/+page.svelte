@@ -1,13 +1,11 @@
 <script lang="ts">
     import { SEO } from '$general/index';
     import { websiteSchema, organizationSchema } from '$utils/json-ld';
-    import ogImageSite from '$images/site/og-img-site.webp';
 </script>
 
 
 <SEO 
     title="Digital Assets Tools" 
-    ogImage={ogImageSite}
     schemas={[
         websiteSchema, 
         organizationSchema
