@@ -9,7 +9,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "clean:all": "rimraf .svelte-kit node_modules",
-        "host": "npm run generate && vite preview --host 0.0.0.0 --port ${PORT-4446}"
+        "host": "vite preview --host 0.0.0.0 --port ${PORT-4446}"
 	},
 	"devDependencies": {
         "@iconify-json/fluent": "^1.1.17",
