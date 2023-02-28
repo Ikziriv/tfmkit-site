@@ -2,7 +2,7 @@ export const HOSTNAME = 'https://tfmkit.com/';
 
 export default {
   author: 'Ikziriv',
-  siteName: 'tfmkit',
+  siteName: 'TFMKIT',
   siteUrl: 'https://tfmkit.com/',
   github: 'https://github.com/ikziriv',
   twitterCard: 'summary_large_image',

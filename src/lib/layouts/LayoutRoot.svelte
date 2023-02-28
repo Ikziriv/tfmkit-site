@@ -1,7 +1,9 @@
 <script lang="ts">
     import { 
         Header,
-        Footer
+        Footer,
+        SideLeft,
+        SideRight
     } from '$general';
     import { Toaster } from 'svelte-french-toast';
     import { currentUser } from '$config/pocketbase';
@@ -14,11 +16,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 </svelte:head>
 
-<main class="flex flex-col justify-start w-full h-screen relative">
+<main class="flex flex-col justify-center w-full h-screen bg-zinc-200 relative">
     <Header />
-        <div transition:fade class="w-full h-auto {$currentUser ? 'py-4 md:py-8' : ''} bg-zinc-50 overflow-y-auto relative z-10">
+    <SideLeft />
+        <div transition:fade class="w-full h-auto bg-zinc-200 overflow-y-auto relative z-0">
             <slot />
         </div>
+    <SideRight />
     <Footer />
     <Toaster />
 </main>

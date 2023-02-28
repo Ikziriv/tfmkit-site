@@ -1,12 +1,24 @@
 <script lang="ts">
+    import { SEO } from '$general/index';
+    import { websiteSchema, organizationSchema } from '$utils/json-ld';
+    import ogImageSite from '$images/site/og-img-site.webp';
 </script>
 
-<svelte:head>
-  <title>Free Digital Assets Tools</title>
-</svelte:head>
 
-<div class="flex flex-col justify-center items-center w-full h-screen bg-transparent overflow-hidden relative">
- <span class="font-black uppercase leading-tight text-xl">tfmkit</span>
+<SEO 
+    title="Digital Assets Tools" 
+    ogImage={ogImageSite}
+    schemas={[
+        websiteSchema, 
+        organizationSchema
+    ]}  
+/>
+
+<div class="flex flex-col justify-center items-center w-full h-auto bg-transparent overflow-hidden relative">
+  <div class="flex flex-col w-auto h-auto text-center md:text-left">
+    <span class="font-black uppercase leading-tight text-xl tracking-widest">tfmkit</span>
+    <small class="font-thin uppercase leading-tight text-xs tracking-widest">Digital Assets Tools</small>
+  </div>
 </div>
 
 <style>
