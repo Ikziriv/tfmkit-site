@@ -1,0 +1,41 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3a3a3a;
+}
+
+*::-webkit-scrollbar {
+    width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #222222;
+    border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    border-radius: 0px;
+    border: 1px solid #3a3a3a;
+}
+
+body {
+    --scrollbar-primary-color: #1d1d27;
+    --text-color: #222222;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.scroll-lock {
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scroll-lock::-webkit-scrollbar {
+    display: none;
+}

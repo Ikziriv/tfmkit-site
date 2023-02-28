@@ -1,0 +1,1 @@
+<footer class="w-full h-auto"></footer>

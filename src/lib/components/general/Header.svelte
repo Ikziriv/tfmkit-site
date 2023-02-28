@@ -1,0 +1,1 @@
+<header class="w-full h-auto"></header>
