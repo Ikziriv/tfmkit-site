@@ -1,6 +1,9 @@
 <script lang="ts">
     import { SEO } from '$general/index';
     import { websiteSchema, organizationSchema } from '$utils/json-ld';
+    import { setMediaScreen } from '$stores';
+
+    $: console.log($setMediaScreen);
 </script>
 
 
@@ -12,11 +15,39 @@
     ]}  
 />
 
-<div class="flex flex-col justify-center items-center w-full h-auto bg-transparent overflow-hidden relative">
-  <div class="flex flex-col w-auto h-auto text-center md:text-left">
-    <span class="font-black uppercase leading-tight text-xl tracking-widest">tfmkit</span>
-    <small class="font-thin uppercase leading-tight text-xs tracking-widest">Digital Assets Tools</small>
+<div class={`flex justify-end items-center w-full h-screen p-4 
+  ${$setMediaScreen === 'tablet' ? 'md:pr-40' : ''}
+  ${$setMediaScreen === 'mobile' ? 'md:pr-40' : ''}
+`}>
+  {#if $setMediaScreen === 'desktop'}
+  <div class="flex flex-col justify-center items-center w-full h-screen bg-zinc-200 border-2 border-zinc-100 shadow-xl bg-transparent overflow-hidden relative">
+    <div class="flex flex-col w-auto h-auto text-center md:text-left">
+      <span class="font-black uppercase leading-tight text-xl tracking-widest">tfmkit</span>
+      <small class="font-thin uppercase leading-tight text-xs tracking-widest">Digital Assets Tools</small>
+    </div>
   </div>
+  {:else if $setMediaScreen === 'tablet'}
+  <div class="flex flex-col justify-center items-center w-[820px] h-screen bg-zinc-200 border-2 border-zinc-100 shadow-xl bg-transparent overflow-hidden relative">
+    <div class="flex flex-col w-auto h-auto text-center">
+      <span class="font-black uppercase leading-tight text-xl tracking-widest">tfmkit</span>
+      <small class="font-thin uppercase leading-tight text-xs tracking-widest">Digital Assets Tools</small>
+    </div>
+  </div>
+  {:else if $setMediaScreen === 'mobile'}
+  <div class="flex flex-col justify-center items-center w-[375px] h-screen bg-zinc-200 border-2 border-zinc-100 shadow-xl bg-transparent overflow-hidden relative">
+    <div class="flex flex-col w-auto h-auto text-center">
+      <span class="font-black uppercase leading-tight text-xl tracking-widest">tfmkit</span>
+      <small class="font-thin uppercase leading-tight text-xs tracking-widest">Digital Assets Tools</small>
+    </div>
+  </div>
+  {:else}
+  <div class="flex flex-col justify-center items-center w-full h-screen bg-zinc-900 border-2 border-zinc-900 shadow-xl bg-transparent overflow-hidden relative">
+    <div class="flex flex-col w-auto h-auto text-center md:text-left">
+      <span class="text-white font-black uppercase leading-tight text-xl tracking-widest">tfmkit</span>
+      <small class="text-white font-thin uppercase leading-tight text-xs tracking-widest">Digital Assets Tools</small>
+    </div>
+  </div>
+  {/if}
 </div>
 
 <style>
