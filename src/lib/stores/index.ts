@@ -10,3 +10,5 @@ export const colorLayout = writable('');
 export const layoutWidth = writable(null);
 export const setResolution = writable('');
 export const setMediaScreen = writable('');
+
+export const campaignType = writable('');

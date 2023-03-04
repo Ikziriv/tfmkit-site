@@ -55,10 +55,15 @@
         </button>
     </div>
     <div class="flex flex-col justify-center items-center w-full h-20 max-h-xl space-y-2 rounded-lg bg-transparent">
-        <button on:click={() => (resetClick())} class="flex flex-row items-center rounded-md space-x-4 w-36 md:w-40 h-auto px-4 py-2 bg-black shadow-xl hover:bg-red-400">
+        <button on:click={() => (!$setMediaScreen ? $setMediaScreen = 'desktop' : resetClick())} class="flex flex-row justify-between items-center rounded-md space-x-4 w-36 md:w-40 h-auto px-4 py-2 bg-black shadow-xl hover:bg-red-400">
             <div class="flex flex-col leading-none">
-                <span class="block text-xs font-bold text-white">Reset</span>
+                {#if !$setMediaScreen}
+                <span class="block text-xs font-bold text-white">Turn On</span>
+                {:else}
+                <span class="block text-xs font-bold text-white">Turn Off</span>
+                {/if}
             </div>
+            <i class="i-tabler-power {!$setMediaScreen ? 'text-green-500' : 'text-red-500'} w-4 h-4"></i>
         </button>
     </div>
 </aside>

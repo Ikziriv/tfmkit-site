@@ -46,9 +46,9 @@ export default defineConfig({
         alias: {
             $lib: path.resolve('./src/lib'),
             $layouts: path.resolve('./src/lib/layouts'),
+            $section: path.resolve('./src/lib/section'),
             $components: path.resolve('./src/lib/components'),
             $general: path.resolve('./src/lib/components/general'),
-            $section: path.resolve('./src/lib/components/section'),
             $shared: path.resolve('./src/lib/components/shared'),
             $helper: path.resolve('./src/lib/helper'),
             $images: path.resolve('./src/lib/images'),

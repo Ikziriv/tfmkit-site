@@ -1,12 +1,17 @@
 export { default as Header }
-from './Header.svelte'
+from './header/Header.svelte'
 export { default as Footer }
-from './Footer.svelte'
+from './footer/Footer.svelte'
+// Root
+export { default as HeaderRoot }
+from './header/HeaderRoot.svelte'
+export { default as FooterRoot }
+from './footer/FooterRoot.svelte'
 
 export { default as SideLeft }
-from './SideLeft.svelte'
+from './sidebar/SideLeft.svelte'
 export { default as SideRight }
-from './SideRight.svelte'
+from './sidebar/SideRight.svelte'
 
 export { default as SEO }
 from './SEO.svelte'
