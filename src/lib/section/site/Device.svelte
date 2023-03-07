@@ -4,7 +4,7 @@
     <h1 class="font-black text-4xl pb-8 md:pb-0"> Device Support </h1>
     <div class="grid grid-cols-3 gap-4 md:gap-0 w-full h-auto">
       <div class="col-span-full md:col-span-1 w-full h-auto rounded-xl">
-        <div class="flex flex-col justify-start items-center w-80 h-96 p-4 rounded-xl shadow-xl bg-white relative">
+        <div class="flex flex-col justify-start items-center w-full md:w-80 h-96 p-4 rounded-xl shadow-xl bg-white relative">
           <div class="absolute inset-x-0 bottom-8 flex flex-col w-auto h-auto p-8 text-left">
             <i class="i-tabler-device-desktop w-10 h-10"></i>
             <h1 class="font-black text-2xl">Web Device</h1>
@@ -14,7 +14,7 @@
       </div>
       
       <div class="col-span-full md:col-span-1 w-full h-auto rounded-xl">
-        <div class="flex flex-col justify-start items-center w-80 h-96 p-4 rounded-xl shadow-xl bg-white relative">
+        <div class="flex flex-col justify-start items-center w-full md:w-80 h-96 p-4 rounded-xl shadow-xl bg-white relative">
           <div class="absolute inset-x-0 bottom-8 flex flex-col w-auto h-auto p-8 text-left">
             <i class="i-tabler-device-tablet w-10 h-10"></i>
             <h1 class="font-black text-2xl">Tablet Device</h1>
@@ -24,7 +24,7 @@
       </div>
       
       <div class="col-span-full md:col-span-1 w-full h-auto rounded-xl">
-        <div class="flex flex-col justify-start items-center w-80 h-96 p-4 rounded-xl shadow-xl bg-white relative">
+        <div class="flex flex-col justify-start items-center w-full md:w-80 h-96 p-4 rounded-xl shadow-xl bg-white relative">
           <div class="absolute inset-x-0 bottom-8 flex flex-col w-auto h-auto p-8 text-left">
             <i class="i-tabler-device-mobile w-10 h-10"></i>
             <h1 class="font-black text-2xl">Mobile Device</h1>

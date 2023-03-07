@@ -4,6 +4,7 @@
   import { 
     Hero,
     CanUsed,
+    HowTo,
     Device 
   } from '$section/site/index';
 
@@ -27,6 +28,7 @@
   <div class="flex flex-col justify-center items-center w-full h-auto">
     <Hero />
     <CanUsed />
+    <HowTo />
     <Device />
   </div>
 </LayoutRoot>

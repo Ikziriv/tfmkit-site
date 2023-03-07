@@ -1,7 +1,7 @@
 <script lang="ts"></script>
 <div class="fixed top-0 flex justify-between items-center w-full h-auto max-w-6xl bg-white border shadow-md rounded-b-xl py-4 px-4 md:px-8 z-40">
     <a href="/">
-        <span class="font-black text-xl">TFMKIT</span>
+        <span class="font-black text-xl text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-black to-gray-700">TFMKIT</span>
     </a>
 
     <ul class="flex flex-row space-x-4">
