@@ -14,6 +14,10 @@ export const colors = [
 
 export function getColor100(color: string): string {
 	switch (color) {
+		case 'black':
+			return 'bg-black'
+		case 'white':
+			return 'bg-white'
 		case 'yellow':
 			return 'bg-yellow-100'
 		case 'lime':
@@ -43,6 +47,10 @@ export function getColor100(color: string): string {
 
 export function getColor500(color: string): string {
 	switch (color) {
+		case 'black':
+			return 'bg-black'
+		case 'white':
+			return 'bg-white'
 		case 'yellow':
 			return 'bg-yellow-500'
 		case 'lime':
@@ -72,6 +80,20 @@ export function getColor500(color: string): string {
 
 export function getTextColor800(color: string): string {
 	switch (color) {
+		case 'black':
+			return 'text-black'
+		case 'white':
+			return 'text-white'
+		case 'red':
+			return 'text-red-800'
+		case 'blue':
+			return 'text-blue-800'
+		case 'purple':
+			return 'text-purple-800'
+		case 'orange':
+			return 'text-orange-800'
+		case 'amber':
+			return 'text-amber-800'
 		case 'yellow':
 			return 'text-yellow-800'
 		case 'lime':
@@ -88,8 +110,6 @@ export function getTextColor800(color: string): string {
 			return 'text-indigo-800'
 		case 'violet':
 			return 'text-violet-800'
-		case 'purple':
-			return 'text-purple-800'
 		case 'fuchsia':
 			return 'text-fuchsia-800'
 		case 'rose':

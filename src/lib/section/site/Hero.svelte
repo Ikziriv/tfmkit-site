@@ -1,4 +1,8 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import { 
+      setBackground
+  } from '$stores';
+</script>
 <div class="flex justify-center items-center w-full h-auto bg-white">
     <div class="grid grid-cols-12 gap-2 w-full h-auto px-4 md:px-0 w-full h-auto md:h-screen max-w-6xl">
       <div class="col-span-full md:col-span-6 flex justify-center items-center w-full h-screen max-w-6xl">
@@ -25,7 +29,11 @@
       <div class="col-span-full md:col-span-6 flex justify-end text-right items-center w-full h-screen max-w-6xl overflow-hidden">
         <div class="flex justify-center items-center w-full h-screen bg-zinc-50 relative">
           <div class="absolute left-20 md:left-40 flex flex-col w-[300px] h-[400px] bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 p-0.5 shadow-xl rounded-xl overflow-hidden z-0">
-            <div class="flex justify-center w-full h-full bg-white rounded-xl"></div>
+            <div class="flex justify-center w-full h-full bg-white rounded-xl">
+            {#if $setBackground}
+              <img class="w-full h-full object-cover object-left md:object-center" src={$setBackground} alt={'SampleImage'}>
+            {/if}  
+          </div>
           </div>
           <div class="absolute right-32 md:right-64 flex flex-col justify-center items-center w-[248px] h-[248px] bg-white shadow-xl rounded-xl overflow-hidden z-10">
             <div class="flex flex-col justify-start items-start p-4">
