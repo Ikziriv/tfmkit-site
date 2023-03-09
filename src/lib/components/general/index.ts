@@ -8,6 +8,9 @@ from './header/HeaderRoot.svelte'
 export { default as FooterRoot }
 from './footer/FooterRoot.svelte'
 
+export { default as FooterNotif }
+from './footer/FooterNotif.svelte'
+
 export { default as SideLeft }
 from './sidebar/SideLeft.svelte'
 export { default as SideRight }

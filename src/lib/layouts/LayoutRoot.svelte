@@ -4,6 +4,7 @@
 
   import { 
     HeaderRoot,
+    FooterNotif,
     FooterRoot
   } from '$general';
   
@@ -23,5 +24,6 @@
     <div transition:fade class={`w-full h-auto`}>
         <slot />
     </div>
+    <FooterNotif />
     <FooterRoot />
 </main>
