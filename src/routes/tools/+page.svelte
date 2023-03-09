@@ -38,7 +38,7 @@
       ${$setResolution === 'r4' ? 'w-[1200px] h-[800px]' : ''}
       overflow-hidden relative
     `}>
-      {#if $setBackground && $setHeadText  && $setTypography}
+      {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
         <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
@@ -75,7 +75,7 @@
       ${$setResolution === 'r4' ? 'w-[1200px] h-[800px]' : ''}
       overflow-hidden relative
     `}>
-      {#if $setBackground && $setHeadText  && $setTypography}
+      {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
         <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
@@ -112,7 +112,7 @@
       ${$setResolution === 'r4' ? 'w-[1200px] h-[800px]' : ''}
       overflow-hidden relative
     `}>
-      {#if $setBackground && $setHeadText  && $setTypography}
+      {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
         <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
@@ -143,7 +143,7 @@
   {:else}
   <div class="flex flex-col justify-center items-center w-full h-screen bg-zinc-900 border-2 border-zinc-900 shadow-xl bg-transparent overflow-hidden relative">
     <div class={`flex justify-center items-center rounded-lg bg-zinc-50 shadow-xl p-8 w-full h-screen overflow-hidden relative`}>
-      {#if $setBackground && $setHeadText  && $setTypography}
+      {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
         <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">

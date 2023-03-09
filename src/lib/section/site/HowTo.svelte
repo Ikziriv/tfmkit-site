@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { fade } from 'svelte/transition';
+  
   import { 
       setBackground,
       setHeadText,
@@ -51,7 +53,7 @@
       <div class="col-span-full md:col-span-8 w-full h-full rounded-xl">
         {#if image}
           {#if image}
-          <div class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white overflow-hidden relative">
+          <div transition:fade class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white overflow-hidden relative">
             <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
               <div class="flex flex-row space-x-2">
                 <i class="i-tabler-photo w-10 h-10"></i>
@@ -64,11 +66,11 @@
               <p class="font-thin leading-none {$setColor ? getTextColor800($setColor) : ''}">{typo}</p>
             </div>
             <div class="absolute inset-0 w-full h-screen bg-center z-0">
-              <img class="w-full h-full object-cover object-left md:object-center" src={image} alt={text}>
+                <img class="w-full h-full object-cover object-left md:object-center" src={image} alt={text}>
             </div>
           </div>
           {:else}
-          <div class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white overflow-hidden relative">
+          <div transition:fade class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white overflow-hidden relative">
             <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
               <div class="flex flex-row space-x-2">
                 <i class="i-tabler-photo w-10 h-10"></i>
@@ -86,7 +88,7 @@
           </div>
           {/if}
         {:else}
-        <div class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white relative">
+        <div transition:fade class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white relative">
           <div class="flex flex-col w-full h-full p-4 md:p-8 text-left">
             <i class="i-tabler-photo w-10 h-10"></i>
             <h1 class="font-black text-2xl">Image Sample</h1>
