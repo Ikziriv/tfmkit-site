@@ -40,7 +40,7 @@
     `}>
       {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
             <i class="i-tabler-photo w-10 h-10"></i>
             <div class="flex flex-col -space-y-2 w-auto h-auto">
@@ -57,10 +57,11 @@
       </div>
       {:else}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left">
-          <i class="i-tabler-photo w-10 h-10"></i>
-          <h1 class="font-black text-2xl">Image Sample</h1>
-          <p class="font-medium leading-none">Fill the form on the right side</p>
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left">
+          <div class="flex flex-col items-center w-auto h-auto bg-white rounded-xl text-xs shadow p-4">
+            <i class="i-tabler-photo w-10 h-10 bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500"></i>
+            <small class="font-bold uppercase leading-none mt-2">URL Image</small>
+          </div>
         </div>
       </div>
       {/if}
@@ -77,7 +78,7 @@
     `}>
       {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
             <i class="i-tabler-photo w-10 h-10"></i>
             <div class="flex flex-col -space-y-2 w-auto h-auto">
@@ -94,10 +95,11 @@
       </div>
       {:else}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left">
-          <i class="i-tabler-photo w-10 h-10"></i>
-          <h1 class="font-black text-2xl">Image Sample</h1>
-          <p class="font-medium leading-none">Fill the form on the right side</p>
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left">
+          <div class="flex flex-col items-center w-auto h-auto bg-white rounded-xl text-xs shadow p-4">
+            <i class="i-tabler-photo w-10 h-10 bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500"></i>
+            <small class="font-bold uppercase leading-none mt-2">URL Image</small>
+          </div>
         </div>
       </div>
       {/if}
@@ -114,7 +116,7 @@
     `}>
       {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
             <i class="i-tabler-photo w-10 h-10"></i>
             <div class="flex flex-col -space-y-2 w-auto h-auto">
@@ -131,21 +133,22 @@
       </div>
       {:else}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left">
-          <i class="i-tabler-photo w-10 h-10"></i>
-          <h1 class="font-black text-2xl">Image Sample</h1>
-          <p class="font-medium leading-none">Fill the form on the right side</p>
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left">
+          <div class="flex flex-col items-center w-auto h-auto bg-white rounded-xl text-xs shadow p-4">
+            <i class="i-tabler-photo w-10 h-10 bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500"></i>
+            <small class="font-bold uppercase leading-none mt-2">URL Image</small>
+          </div>
         </div>
       </div>
       {/if}
     </div>
   </div>
   {:else}
-  <div class="flex flex-col justify-center items-center w-full h-screen bg-zinc-900 border-2 border-zinc-900 shadow-xl bg-transparent overflow-hidden relative">
-    <div class={`flex justify-center items-center rounded-lg bg-zinc-50 shadow-xl p-8 w-full h-screen overflow-hidden relative`}>
+  <div class="flex flex-col justify-center items-center w-full h-screen bg-zinc-900 border-2 border-zinc-900 rounded-lg shadow-xl bg-transparent overflow-hidden relative">
+    <div class={`flex justify-center items-center rounded-lg bg-zinc-200 shadow-xl p-8 w-full h-screen overflow-hidden relative`}>
       {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left z-10">
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left z-10">
           <div class="flex flex-row space-x-2">
             <i class="i-tabler-photo w-10 h-10"></i>
             <div class="flex flex-col -space-y-2 w-auto h-auto">
@@ -161,11 +164,12 @@
         </div>
       </div>
       {:else}
-      <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
-        <div class="flex flex-col w-full h-full p-4 md:p-8 text-left">
-          <i class="i-tabler-photo w-10 h-10"></i>
-          <h1 class="font-black text-2xl">Image Sample</h1>
-          <p class="font-medium leading-none">Fill the form on the right side</p>
+      <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-zinc-500 relative">
+        <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left">
+          <div class="flex flex-col items-center w-auto h-auto bg-white rounded-xl text-xs shadow p-4">
+            <i class="i-tabler-photo w-10 h-10 bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500"></i>
+            <small class="font-bold uppercase leading-none mt-2">URL Image</small>
+          </div>
         </div>
       </div>
       {/if}

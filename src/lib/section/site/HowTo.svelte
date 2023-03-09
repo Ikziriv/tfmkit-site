@@ -89,10 +89,11 @@
           {/if}
         {:else}
         <div transition:fade class="flex flex-col justify-start items-center w-full h-screen p-4 rounded-xl shadow-xl bg-white relative">
-          <div class="flex flex-col w-full h-full p-4 md:p-8 text-left">
-            <i class="i-tabler-photo w-10 h-10"></i>
-            <h1 class="font-black text-2xl">Image Sample</h1>
-            <p class="font-medium leading-none">Fill the form on the right side</p>
+          <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left">
+            <div class="flex flex-col items-center w-auto h-auto bg-white rounded-xl text-xs shadow p-4">
+              <i class="i-tabler-photo w-10 h-10 bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500"></i>
+              <small class="font-bold uppercase leading-none mt-2">URL Image</small>
+            </div>
           </div>
         </div>
         {/if}
