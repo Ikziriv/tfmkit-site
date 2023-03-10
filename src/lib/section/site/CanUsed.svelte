@@ -4,54 +4,54 @@
     <div class="grid grid-cols-4 md:grid-cols-3 gap-2 md:gap-4 w-full h-auto">
       <div class="col-span-2 md:col-span-1 w-full h-auto rounded-xl">
         <div class="flex flex-col justify-start items-center w-full md:w-40 h-40 rounded-xl shadow-xl bg-transparent p-0.5 relative">
-          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-3 text-left">
+          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-4 text-left">
             <i class="i-tabler-world w-10 h-10"></i>
-            <h1 class="font-medium text-xl">Website</h1>
+            <h1 class="font-normal text-xl">Website</h1>
           </div>
         </div>
       </div>
 
       <div class="col-span-2 md:col-span-1 w-full h-auto rounded-xl">
         <div class="flex flex-col justify-start items-center w-full md:w-40 h-40 rounded-xl shadow-xl bg-transparent p-0.5 relative">
-          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-3 text-left">
+          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-4 text-left">
             <i class="i-tabler-brand-instagram w-10 h-10"></i>
-            <h1 class="font-medium text-xl">Instagram</h1>
+            <h1 class="font-normal text-xl">Instagram</h1>
           </div>
         </div>
       </div>
       
       <div class="col-span-2 md:col-span-1 w-full h-auto rounded-xl">
         <div class="flex flex-col justify-start items-center w-full md:w-40 h-40 rounded-xl shadow-xl bg-transparent p-0.5 relative">
-          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-3 text-left">
+          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-4 text-left">
             <i class="i-tabler-brand-tiktok w-10 h-10"></i>
-            <h1 class="font-medium text-xl">Tiktok</h1>
+            <h1 class="font-normal text-xl">Tiktok</h1>
           </div>
         </div>
       </div>
       
       <div class="col-span-2 md:col-span-1 w-full h-auto rounded-xl">
         <div class="flex flex-col justify-start items-center w-full md:w-40 h-40 rounded-xl shadow-xl bg-transparent p-0.5 relative">
-          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-3 text-left">
+          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-4 text-left">
             <i class="i-tabler-brand-facebook w-10 h-10"></i>
-            <h1 class="font-medium text-xl">Facebook</h1>
+            <h1 class="font-normal text-xl">Facebook</h1>
           </div>
         </div>
       </div>
       
       <div class="col-span-2 md:col-span-1 w-full h-auto rounded-xl">
         <div class="flex flex-col justify-start items-center w-full md:w-40 h-40 rounded-xl shadow-xl bg-transparent p-0.5 relative">
-          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-3 text-left">
+          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-4 text-left">
             <i class="i-tabler-brand-twitter w-10 h-10"></i>
-            <h1 class="font-medium text-xl">Twitter</h1>
+            <h1 class="font-normal text-xl">Twitter</h1>
           </div>
         </div>
       </div>
       
       <div class="col-span-2 md:col-span-1 w-full h-auto rounded-xl">
         <div class="flex flex-col justify-start items-center w-full md:w-40 h-40 rounded-xl shadow-xl bg-transparent p-0.5 relative">
-          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-3 text-left">
+          <div class="flex flex-col justify-between w-full h-full bg-white rounded-xl p-4 text-left">
             <i class="i-tabler-brand-youtube w-10 h-10"></i>
-            <h1 class="font-medium text-xl">Youtube</h1>
+            <h1 class="font-normal text-xl">Youtube</h1>
           </div>
         </div>
       </div>

@@ -5,11 +5,18 @@
         SideLeft,
         SideRight
     } from '$general';
+
     import { onMount } from 'svelte';
     import { setContext } from 'svelte';
     import { Toaster } from 'svelte-french-toast';
 	import { fade } from 'svelte/transition';
-    import { setMediaScreen, setResolution, layoutWidth } from '$stores';
+
+    import { 
+        setMediaScreen, 
+        setResolution, 
+        layoutWidth
+    } from '$stores';
+
     setContext('layoutWidth', layoutWidth)
 
     // const element = document.getElementById('#inner-main');
@@ -26,7 +33,7 @@
 </svelte:head>
 
 <main class={`flex flex-col justify-center w-full h-screen 
-    ${$setMediaScreen === 'desktop' || 'tablet' || 'mobile' ? 'bg-zinc-600' : 'bg-zinc-200'} 
+    ${$setMediaScreen === 'desktop' || 'tablet' || 'mobile' ? 'bg-zinc-600' : 'bg-zinc-900'} 
     relative
 `}>
     <Header />
@@ -35,7 +42,7 @@
             bind:offsetWidth={$layoutWidth}
             id={`${$setResolution === 'r3' ? 'inner-main' : ''}`}
             class={`w-full h-auto 
-                ${$setMediaScreen === 'desktop' || 'tablet' || 'mobile' ? 'bg-zinc-600' : 'bg-zinc-200'} 
+                ${$setMediaScreen === 'desktop' || 'tablet' || 'mobile' ? 'bg-zinc-600' : 'bg-zinc-900'} 
                 overflow-y-auto relative z-0
             `}>
             <slot />

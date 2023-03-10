@@ -47,12 +47,15 @@
     })
 </script>
 <footer class="absolute inset-x-0 bottom-2 md:bottom-4 flex flex-row justify-start items-center bg-transparent w-full md:max-w-xl h-auto md:h-20 z-10">
-    <div class="flex flex-row justify-center md:justify-start items-center w-full md:w-auto h-auto items-center space-x-2 px-0 md:px-8">
-        <div class="flex flex-row justify-between md:justify-start items-center md:space-x-2 rounded-md w-full md:w-auto px-2">
+    <div class="flex flex-row justify-center md:justify-start items-center w-full md:w-auto h-auto items-center space-x-2 px-4 md:px-8">
+        <div class="flex flex-row justify-between md:justify-start items-center md:space-x-2 rounded-md w-full md:w-auto px-0 md:px-2">
             <div class="flex flex-row md:space-x-2 w-full md:w-auto h-auto">
-                <a href="/" class="flex justify-center items-center w-10 h-10 bg-black rounded-md shadow">
+                <a href="/" class="hidden md:flex justify-center items-center w-10 h-10 bg-black rounded-md shadow">
                     <i class="i-tabler-x w-4 h-4 text-red-500"></i>
                 </a>
+                <button class="flex justify-center items-center w-10 h-10 bg-white rounded-md shadow">
+                    <i class="i-tabler-question-circle w-4 h-4"></i>
+                </button>
                 <button disabled={!$setMediaScreen} class="w-auto h-10 py-2 px-2 flex justify-center items-center font-medium {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow">
                     <i class="i-tabler-zoom-in w-4 h-4"></i>
                 </button>

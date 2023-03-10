@@ -38,6 +38,8 @@
 			"$typings/*": ["src/lib/typings/*"],
 			"$utils": ["src/lib/utils"],
 			"$utils/*": ["src/lib/utils/*"],
+			"$widget": ["src/lib/widget"],
+			"$widget/*": ["src/lib/widget/*"],
 			"$styles": ["src/styles"],
 			"$styles/*": ["src/styles/*"]
 		}

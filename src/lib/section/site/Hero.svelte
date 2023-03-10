@@ -24,18 +24,19 @@
             <h1 class="font-black text-5xl md:text-7xl leading-none tracking-loose uppercase">
               Tools for
             </h1>
-            <h1 class="font-black text-5xl md:text-7xl leading-none tracking-loose uppercase">
+            <h1 class="font-black text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500 leading-none tracking-loose uppercase">
               Campaign
             </h1>
           </div>
-          <p class="mt-4 leading-none tracking-loose font-medium text-lg md:text-xl pr-4 md:pr-8">
+          <p class="mt-4 leading-none tracking-loose font-normal text-lg md:text-xl pr-4 md:pr-8">
             Create the prefect campaign or find and get the most unique collections campaign template.
           </p>
-          <div class="w-full mt-8 bg-transparent border shadow-xl rounded-md md:rounded-full lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40">
+          <div class="w-full mt-8 bg-transparent border border-zinc-900 shadow-xl rounded-md md:rounded-full lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40">
             <form class="flex flex-col md:flex-row">
-              <input on:input={() => (setBackground.set(imgUrl))} bind:value={imgUrl} name="image" type="text" placeholder="Enter URL Image" class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0" />
-
-              <button on:click={setupClick} class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-zinc-900 rounded-md md:rounded-full hover:bg-zinc-800">
+              {#if !$setBackground}
+              <input bind:value={imgUrl} name="image" type="text" placeholder="Enter URL Image" class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0" />
+              {/if}
+              <button on:click={setupClick} class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-zinc-900 {$setBackground ? 'w-full h-auto rounded-md md:rounded-full' : 'w-auto h-auto rounded-md md:rounded-r-full'}  hover:bg-zinc-800">
                 Start Now
               </button>
             </form>

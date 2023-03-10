@@ -2,36 +2,41 @@
     import { 
         setMediaScreen, 
         setResolution, 
-        campaignType 
+        campaignType,
+        setBackground 
     } from '$stores';
 
 	let selected: any;
 </script>
-<header class="absolute inset-x-0 top-2 md:top-4 flex flex-col md:flex-row justify-center md:justify-between items-center bg-transparent w-full h-auto md:h-20 z-10">
+<header class="absolute inset-x-0 top-2 md:top-4 flex flex-row justify-between items-center bg-transparent w-full h-auto md:h-20 z-10">
     {#if $setResolution === 'r1' || $setResolution === ''}
     <div class="hidden md:flex flex-row justify-center items-center w-full h-20 md:max-w-xl space-x-4 rounded-lg bg-transparent">
-        <button on:click={() => ($setMediaScreen = 'desktop')} class="flex justify-center items-center w-16 h-16 bg-white rounded-md shadow p-4">
+        <button disabled={!$setMediaScreen} on:click={() => ($setMediaScreen = 'desktop')} class="flex justify-center items-center w-16 h-16 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow p-4">
             <i class="i-tabler-device-desktop w-6 h-6"></i>
         </button>
-        <button on:click={() => ($setMediaScreen = 'tablet')} class="flex justify-center items-center w-16 h-16 bg-white rounded-md shadow p-4">
+        <button disabled={!$setMediaScreen} on:click={() => ($setMediaScreen = 'tablet')} class="flex justify-center items-center w-16 h-16 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow p-4">
             <i class="i-tabler-device-tablet w-6 h-6"></i>
         </button>
-        <button on:click={() => ($setMediaScreen = 'mobile')} class="flex justify-center items-center w-16 h-16 bg-white rounded-md shadow p-4">
+        <button disabled={!$setMediaScreen} on:click={() => ($setMediaScreen = 'mobile')} class="flex justify-center items-center w-16 h-16 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow p-4">
             <i class="i-tabler-device-mobile w-6 h-6"></i>
         </button>
     </div>
     {:else}
     <div class="hidden md:flex flex-row justify-center items-center w-full h-20 max-w-xl space-x-4 rounded-lg bg-transparent">
-        <button on:click={() => ($setMediaScreen = 'desktop')} class="flex justify-center items-center w-16 h-16 bg-white rounded-md shadow p-4">
+        <button disabled={!$setMediaScreen} on:click={() => ($setMediaScreen = 'desktop')} class="flex justify-center items-center w-16 h-16 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow p-4">
             <i class="i-tabler-device-desktop w-6 h-6"></i>
         </button>
-        <button on:click={() => ($setMediaScreen = 'tablet')} class="flex justify-center items-center w-16 h-16 bg-white rounded-md shadow p-4">
+        <button disabled={!$setMediaScreen} on:click={() => ($setMediaScreen = 'tablet')} class="flex justify-center items-center w-16 h-16 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow p-4">
             <i class="i-tabler-device-tablet w-6 h-6"></i>
         </button>
     </div>
     {/if}
     
-    <div class="flex flex-row justify-center items-center w-full h-20 md:max-w-xl space-x-4 rounded-lg bg-transparent">
+    <button disabled={!$setMediaScreen} class="flex md:hidden justify-center items-center w-16 h-16 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} rounded-md shadow p-4">
+        <i class="i-tabler-menu w-6 h-6"></i>
+    </button>
+
+    <div class="flex flex-row justify-center items-center w-auto md:w-full h-20 md:max-w-xl space-x-4 rounded-lg bg-transparent">
         <div class="flex items-center text-gray-500 w-auto md:w-40 {!$setMediaScreen ? 'bg-zinc-500' : 'bg-white'} md:rounded-md">
             <label for="hs-inline-leading-select-zoom" class="sr-only">Assets</label>
             <div class="flex flex-col-reverse md:flex-row rounded-md shadow-sm">

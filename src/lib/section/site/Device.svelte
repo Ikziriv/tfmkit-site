@@ -8,7 +8,7 @@
           <div class="absolute inset-x-0 bottom-8 flex flex-col w-auto h-auto p-8 text-left">
             <i class="i-tabler-device-desktop w-10 h-10"></i>
             <h1 class="font-black text-2xl">Web Device</h1>
-            <p class="font-medium leading-none">Support fot web device template</p>
+            <p class="font-normal leading-none">Support fot web device template</p>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
           <div class="absolute inset-x-0 bottom-8 flex flex-col w-auto h-auto p-8 text-left">
             <i class="i-tabler-device-tablet w-10 h-10"></i>
             <h1 class="font-black text-2xl">Tablet Device</h1>
-            <p class="font-medium leading-none">Support fot web device template</p>
+            <p class="font-normal leading-none">Support fot web device template</p>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
           <div class="absolute inset-x-0 bottom-8 flex flex-col w-auto h-auto p-8 text-left">
             <i class="i-tabler-device-mobile w-10 h-10"></i>
             <h1 class="font-black text-2xl">Mobile Device</h1>
-            <p class="font-medium leading-none">Support fot web device template</p>
+            <p class="font-normal leading-none">Support fot web device template</p>
           </div>
         </div>
       </div>

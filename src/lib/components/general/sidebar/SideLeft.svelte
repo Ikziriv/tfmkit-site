@@ -7,6 +7,7 @@
         colorLayout,
         setResolution,
         setMediaScreen,
+        setBackground,
     } from '$stores';
 
     function resetClick() {
@@ -17,6 +18,8 @@
         colorLayout.set('');
         setResolution.set('');
         setMediaScreen.set('');
+        // Assets
+        setBackground.set('');
     }
 </script>
 <aside class="absolute inset-y-0 left-2 md:left-4 hidden md:flex flex-col justify-center items-center bg-transparent w-36 h-screen z-10">

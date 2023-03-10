@@ -1,6 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { extractorSvelte } from '@unocss/core';
+import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 import UnoCSS from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import presetIcons from '@unocss/preset-icons';
@@ -13,6 +14,45 @@ export default defineConfig({
 	},
 	plugins: [
 		sveltekit(),
+        SvelteKitPWA({
+            srcDir: './src',
+            mode: 'development',
+            strategies: 'injectManifest',
+            filename: 'prompt-sw.ts',
+            scope: '/',
+            base: '/',
+            manifest: {
+                short_name: 'TFMKIT PWA',
+                name: 'TFMKIT PWA',
+                start_url: '/',
+                scope: '/',
+                display: 'standalone',
+                theme_color: "#ffffff",
+                background_color: "#ffffff",
+                icons: [
+                    {
+                        src: '/android-icon-192x192.png',
+                        sizes: '192x192',
+                        type: 'image/png',
+                    },
+                    {
+                        src: '/apple-icon-152x152.png',
+                        sizes: '152x152',
+                        type: 'image/png',
+                    },
+                ],
+            },
+            injectManifest: {
+                globPatterns: ['client/**/*.{js,css,ico,png,svg,webp,woff,woff2}']
+            },
+            devOptions: {
+                enabled: true,
+                type: 'module',
+                navigateFallback: '/',
+            },
+            // if you have shared info in svelte config file put in a separate module and use it also here
+            kit: {}
+        }),
         UnoCSS({
             extractors: [extractorSvelte],
             shortcuts: [
@@ -55,6 +95,7 @@ export default defineConfig({
             $stores: path.resolve('./src/lib/stores'),
             $typings: path.resolve('./src/lib/typings'),
             $utils: path.resolve('./src/lib/utils'),
+            $widget: path.resolve('./src/lib/widget'),
             $config: path.resolve('./src/lib/config'),
             $contents: path.resolve('./src/lib/contents'),
             $styles: path.resolve('./src/styles')

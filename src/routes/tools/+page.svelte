@@ -25,7 +25,7 @@
 />
 
 <LayoutApp>
-<div class={`flex justify-center md:justify-end items-center w-full h-screen p-0 md:p-4 
+<div class={`flex justify-center md:justify-end items-center w-full h-screen bg-zinc-900 p-0 md:p-4 
   ${$setMediaScreen === 'tablet' ? 'sm:pr-0 md:pr-56 lg:pr-56 xl:pr-56' : ''}
   ${$setMediaScreen === 'mobile' ? 'sm:pr-0 md:pr-96 lg:pr-56 xl:pr-56' : ''}
 `}>
@@ -145,7 +145,7 @@
   </div>
   {:else}
   <div class="flex flex-col justify-center items-center w-full h-screen bg-zinc-900 border-2 border-zinc-900 rounded-lg shadow-xl bg-transparent overflow-hidden relative">
-    <div class={`flex justify-center items-center rounded-lg bg-zinc-200 shadow-xl p-8 w-full h-screen overflow-hidden relative`}>
+    <div class={`flex justify-center items-center rounded-lg bg-transparent shadow-xl p-8 w-full h-screen overflow-hidden relative`}>
       {#if $setBackground}
       <div class="flex flex-col justify-start items-center w-full h-full p-4 rounded-xl shadow-xl bg-white relative">
         <div class="flex flex-col justify-center items-center w-full h-full p-4 md:p-8 text-left z-10">
