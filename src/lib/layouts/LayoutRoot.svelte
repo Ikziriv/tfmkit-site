@@ -7,6 +7,10 @@
     FooterNotif,
     FooterRoot
   } from '$general';
+
+  import { 
+    ProgressScroll
+  } from '$shared';
   
   onMount(() => {
       // Load
@@ -20,6 +24,7 @@
 </svelte:head>
 
 <main class={`flex flex-col justify-center items-center w-full h-auto bg-white relative`}>
+    <ProgressScroll />
     <HeaderRoot />
     <div transition:fade class={`w-full h-auto`}>
         <slot />

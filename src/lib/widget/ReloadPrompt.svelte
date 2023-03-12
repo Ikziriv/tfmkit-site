@@ -21,18 +21,20 @@
   </script>
   
   {#if toast}
-	<div class="pwa-toast" role="alert">
-	  <div class="message">
-		{#if $offlineReady}
-		  <span> App ready to work offline </span>
-		{:else}
-		  <span> New content available, click on reload button to update. </span>
+	<div class="pwa-toast shadow-xl" role="alert">
+		<div class="message">
+			{#if $offlineReady}
+				<span class="text-sm font-normal"> App ready to work offline </span>
+			{:else}
+				<span class="text-sm font-normal"> New content available, click on reload button to update. </span>
+			{/if}
+		</div>
+		{#if $needRefresh}
+			<button on:click={() => updateServiceWorker(true)}> Reload </button>
 		{/if}
-	  </div>
-	  {#if $needRefresh}
-		<button on:click={() => updateServiceWorker(true)}> Reload </button>
-	  {/if}
-	  <button on:click={close}> Close </button>
+	  	<button class="bg-blue-600 py-2 px-4 rounded-full" on:click={close}> 
+			<span class="text-sm font-bold">Close</span>
+		</button>
 	</div>
   {/if}
   
@@ -47,7 +49,6 @@
 	  border-radius: 4px;
 	  z-index: 9999;
 	  text-align: left;
-	  box-shadow: 3px 4px 5px 0 #8885;
 	  background-color: var(--mainColor2);
 	}
 	.pwa-toast .message {

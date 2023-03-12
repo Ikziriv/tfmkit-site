@@ -1,3 +1,20 @@
+:root {
+    color-scheme: light dark;
+}
+
+[data-theme='light'] {
+    color-scheme: light;
+}
+
+[data-theme='dark'] {
+    color-scheme: dark;
+}
+
+[data-theme='dark'] ::selection {
+    background-color: #606887;
+    color: #f3f2f9;
+}
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #3a3a3a;
